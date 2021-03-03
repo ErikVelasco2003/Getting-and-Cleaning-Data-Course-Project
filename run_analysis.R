@@ -50,5 +50,5 @@ names(good_data)<-gsub("-freq()", "Frequency", names(good_data), ignore.case = T
 ## (3.5) From the data set in step 4, creates a second, independent tidy data set with the
 ## average of each variable for each activity and each subject.
 final_data <- group_by(good_data,subject, activity) 
-write.table(final_data, "FinalData.txt", row.name=FALSE)
+write.table(final_data, "./FinalData.txt", row.name=FALSE)
 
